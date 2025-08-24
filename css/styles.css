@@ -199,19 +199,23 @@ section {
 }
 
 .portfolio-cards {
-	font-size: 0;
 	margin: 45px -15px 0;
 }
 
 .portfolio-card {
 	width: 33.333%;
 	height: 226px;
-	display: inline-block;
-	font-size: 22px;
+	float: left;
 	margin-bottom: 30px;
 	border-radius: 15px;
 	overflow: hidden;
 	padding: 0 15px;
+}
+
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
 }
 
 .portfolio-card img {
